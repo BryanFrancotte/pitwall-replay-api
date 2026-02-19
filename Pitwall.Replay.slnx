@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Elsa.Orchestrator/">
+    <Project Path="src/Services/Elsa.Orchestrator/Elsa.Orchestrator.Api/Elsa.Orchestrator.Api.csproj" />
+    <Project Path="src/Services/Elsa.Orchestrator/Elsa.Orchestrator.Application/Elsa.Orchestrator.Application.csproj" Id="7c3509f4-e4db-4756-a9ab-a9ca9bc84fa6" />
+    <Project Path="src/Services/Elsa.Orchestrator/Elsa.Orchestrator.Domain/Elsa.Orchestrator.Domain.csproj" Id="bf83310f-8634-4e58-b4b2-28a6220e2906" />
+    <Project Path="src/Services/Elsa.Orchestrator/Elsa.Orchestrator.Infrastructure/Elsa.Orchestrator.Infrastructure.csproj" Id="08e35f15-e981-469b-b996-508dd193bddf" />
+  </Folder>
+  <Folder Name="/src/Services/SessionCore/" />
+  <Folder Name="/tests/" />
+</Solution>
