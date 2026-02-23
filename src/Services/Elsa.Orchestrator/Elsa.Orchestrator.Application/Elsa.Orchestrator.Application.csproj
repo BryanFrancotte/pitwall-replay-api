@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Elsa.Orchestrator.Contracts\Elsa.Orchestrator.Contracts.csproj" />
+    <ProjectReference Include="..\Elsa.Orchestrator.Domain\Elsa.Orchestrator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
