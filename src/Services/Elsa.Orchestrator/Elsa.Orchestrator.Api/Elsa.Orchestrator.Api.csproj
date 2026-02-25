@@ -16,4 +16,9 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Elsa.Orchestrator.Application\Elsa.Orchestrator.Application.csproj" />
+    <ProjectReference Include="..\Elsa.Orchestrator.Infrastructure\Elsa.Orchestrator.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

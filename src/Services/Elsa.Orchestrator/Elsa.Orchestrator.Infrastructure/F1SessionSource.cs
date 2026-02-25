@@ -1,11 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Elsa.Orchestrator.Application.Ports;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Elsa.Orchestrator.Infrastructure
 {
-    public sealed class F1SessionSource
+    public sealed class F1SessionSource : IF1SessionSource
     {
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
@@ -16,7 +17,7 @@ namespace Elsa.Orchestrator.Infrastructure
             _baseUrl = config["F1:BaseUrl"] ?? "https://livetiming.formula1.com";
         }
 
-        public async Task<string> GetInfoSessionJsonAsync(string sessionPath, CancellationToken cancellationToken)
+        public async Task<string> GetSessionInfoJsonAsync(string sessionPath, CancellationToken cancellationToken)
         {
             var url = $"{_baseUrl}/{sessionPath}";
             var response = await _httpClient.GetAsync(url, cancellationToken);
